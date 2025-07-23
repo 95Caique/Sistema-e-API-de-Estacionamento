@@ -20,7 +20,7 @@ class ParkingRecord(models.Model):
     verbose_name='Veículos',
     )
     parking_spot = models.ForeignKey(ParkinSpot, on_delete=models.PROTECT, related_name='parking_records',
-    verbose_name='Veículos',
+    verbose_name='Vaga',
     )
     entry_time = models.DateTimeField(auto_now_add =True, verbose_name='Horário de entrada',)
     exit_type = models.DateTimeField(blank=True, null=True, verbose_name='Horário de saída',)
